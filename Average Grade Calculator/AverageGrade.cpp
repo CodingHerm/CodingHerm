@@ -37,6 +37,7 @@ int main(){
     //setprecision(4) is rounding four places, that includes the whole number value
     if (totalgrade / counter > 10)
     cout << "\t\t" << setprecision(4) << (totalgrade)/counter << "%"<<endl; 
+    //You need to include the else for values that are grades that are lower then ten for rounding
     else 
     cout << "\t\t" << setprecision(3) << (totalgrade)/counter << "%" << endl;
     
