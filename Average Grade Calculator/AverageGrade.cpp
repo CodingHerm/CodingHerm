@@ -34,10 +34,10 @@ int main(){
         }
     }
 
-    //setprecision(4) is rounding four places, that includes the whole number value
+    //setprecision(4) is rounding, but instead of just rounding numbers beyond the decimal point, it is rounding all numbers and 4 just tells it when to stop
     if (totalgrade / counter > 10)
     cout << "\t\t" << setprecision(4) << (totalgrade)/counter << "%"<<endl; 
-    //You need to include the else for values that are grades that are lower then ten for rounding
+    //You need to include else for grades values that that are lower then ten to round to the nearest hundreth again.
     else 
     cout << "\t\t" << setprecision(3) << (totalgrade)/counter << "%" << endl;
     
